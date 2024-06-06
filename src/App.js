@@ -2,9 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import SportList from './components/SportList';
-import AddSport from './components/AddSport';
-import UpdateSport from './components/UpdateSport';
+import UserList from './components/UserList';
+import AddUser from './components/AddUser';
+import UpdateUser from './components/UpdateUser';
 
 const App = () => {
   return (
@@ -26,10 +26,10 @@ const App = () => {
       <Router>
         <div className="container">
           <Routes>
-            <Route path="/" element={<SportList />} />
-            <Route path="/sports" element={<SportList />} />
-            <Route path="/add-sport" element={<AddSport />} />
-            <Route path="/update-sport/:id" element={<UpdateSport />} />
+            <Route path="/" element={<UserList />} />
+            <Route path="/users" element={<UserList />} />
+            <Route path="/add-user" element={<AddUser />} />
+            <Route path="/update-user/:id" element={<UpdateUser />} />
           </Routes>
         </div>
       </Router>
