@@ -2,9 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import UserList from './components/UserList';
-import AddUser from './components/AddUser';
-import UpdateUser from './components/UpdateUser';
+import PlanningList from './components/PlanningList';
+import AddPlanning from './components/AddPlanning';
+import UpdatePlanning from './components/UpdatePlanning';
 
 const App = () => {
   return (
@@ -26,10 +26,10 @@ const App = () => {
       <Router>
         <div className="container">
           <Routes>
-            <Route path="/" element={<UserList />} />
-            <Route path="/users" element={<UserList />} />
-            <Route path="/add-user" element={<AddUser />} />
-            <Route path="/update-user/:id" element={<UpdateUser />} />
+            <Route path="/" element={<PlanningList />} />
+            <Route path="/plannings" element={<PlanningList />} />
+            <Route path="/add-planning" element={<AddPlanning />} />
+            <Route path="/update-planning/:id" element={<UpdatePlanning />} />
           </Routes>
         </div>
       </Router>
